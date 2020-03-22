@@ -1,7 +1,7 @@
 {
   "name": "timeline-export",
   "description": "Create a shareable timeline view for Chrome performance profiles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Mario Nebl",
   "license": "MIT",
   "main": "lib/timeline-export.main.js",
