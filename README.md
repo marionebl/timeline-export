@@ -2,6 +2,12 @@
 
 > Create a shareable timeline view for Chrome performance profiles
 
+## Installation
+
+```
+PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn global add timeline-export
+```
+
 ## Example
 
 The timeline generated via `timeline-export -p example/profile.json -o example/dist`
