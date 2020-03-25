@@ -12,15 +12,14 @@
     "deploy:example": "surge example/dist"
   },
   "dependencies": {
-    "chrome-devtools-frontend": "1.0.746710",
     "memfs": "^3.1.2",
     "resolve-pkg": "^2.0.0",
+    "timeline-export-app": "^1.0.1-4e36ac84",
     "yargs": "^15.3.1"
   },
   "devDependencies": {
     "@types/node": "^13.9.2",
     "@types/yargs": "^15.0.4",
-    "surge": "^0.21.3",
     "ts-node": "^8.8.0",
     "typescript": "^3.8.3"
   }

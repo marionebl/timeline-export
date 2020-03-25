@@ -16,7 +16,7 @@ can be found at [https://habitual-baseball.surge.sh/](https://habitual-baseball.
 ## Usage
 
 ```
-❯ node lib/timeline-export.bin.js --help
+❯ timeline-export --help
 Options:
   --help         Show help                                             [boolean]
   --version      Show version number                                   [boolean]

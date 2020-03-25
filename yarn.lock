@@ -162,11 +162,6 @@ chardet@^0.7.0:
   resolved "https://packages.atlassian.com/api/npm/npm-remote/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
   integrity sha1-kAlISfCTfy7twkJdDSip5fDLrZ4=
 
-chrome-devtools-frontend@1.0.746710:
-  version "1.0.746710"
-  resolved "https://packages.atlassian.com/api/npm/npm-remote/chrome-devtools-frontend/-/chrome-devtools-frontend-1.0.746710.tgz#2079d52b2d39dc789129378ab6cfe66b21a8ff1a"
-  integrity sha1-IHnVKy053HiRKTeKts/mayGo/xo=
-
 cli-cursor@^2.1.0:
   version "2.1.0"
   resolved "https://packages.atlassian.com/api/npm/npm-remote/cli-cursor/-/cli-cursor-2.1.0.tgz#b35dac376479facc3e94747d41d0d0f5238ffcb5"
@@ -1197,6 +1192,11 @@ through@2, through@^2.3.6:
   version "2.3.8"
   resolved "https://packages.atlassian.com/api/npm/npm-remote/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
+
+timeline-export-app@^1.0.1-4e36ac84:
+  version "1.0.1-4e36ac84"
+  resolved "https://packages.atlassian.com/api/npm/npm-remote/timeline-export-app/-/timeline-export-app-1.0.1-4e36ac84.tgz#79c2cec6007011787b6f89fd77933e75e5b5bc29"
+  integrity sha1-ecLOxgBwEXh7b4n9d5M+deW1vCk=
 
 tmp@^0.0.33:
   version "0.0.33"
