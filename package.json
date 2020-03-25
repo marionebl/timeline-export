@@ -8,8 +8,7 @@
   "bin": "lib/timeline-export.bin.js",
   "scripts": {
     "build": "tsc",
-    "build:example": "node lib/timeline-export.bin.js -p ./example/profile.json -o ./example/dist",
-    "deploy:example": "surge example/dist"
+    "build:example": "node lib/timeline-export.bin.js -p ./example/profile.json -o ./example/dist"
   },
   "dependencies": {
     "memfs": "^3.1.2",
