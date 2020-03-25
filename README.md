@@ -11,7 +11,7 @@ PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn global add timeline-export
 ## Example
 
 The timeline generated via `timeline-export -p example/profile.json -o example/dist`
-can be found at [https://habitual-baseball.surge.sh/](https://habitual-baseball.surge.sh/).
+can be found at [https://awesome-jang-5265a4.netlify.com/](https://awesome-jang-5265a4.netlify.com/).
 
 ## Usage
 
