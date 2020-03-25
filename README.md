@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn global add timeline-export
+yarn add timeline-export
 ```
 
 ## Example
