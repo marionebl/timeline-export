@@ -1,11 +1,13 @@
 import * as Fs from "fs";
-import * as Path from "path";
 import { Volume } from "memfs";
 import resolvePkg from "resolve-pkg";
+import {JSDOM} from "jsdom";
 import { copy } from "./fs-util/copy";
+import { EEXIST } from "constants";
 
 export interface TimelineExportOptions {
   profile: string;
+  queryable: boolean;
 }
 
 export async function timelineExport(options: TimelineExportOptions) {
@@ -24,8 +26,19 @@ export async function timelineExport(options: TimelineExportOptions) {
   // Copy required module sources into target fs
   await copy({ path: sourcePath, fs: Fs }, { path: "/", fs });
 
+  const html = await fs.promises.readFile('/timeline_export_app.html', 'utf-8');
+  const dom = new JSDOM(html);
+  const {window} = dom;
+  const document = window.document;
+
+  if (options.queryable) {
+    document.body.dataset.queryable = 'true';
+  } else {
+    document.head.innerHTML = `<link rel="preload" href="./profile.json" as ="fetch">${document.head.innerHTML}`;
+  }
+  
   // Rename entry point template
-  await fs.promises.rename('/timeline_export_app.html', '/index.html');
+  await fs.promises.writeFile('/index.html', dom.serialize());
 
   // Inject the profile
   await fs.promises.writeFile('/profile.json', options.profile);
