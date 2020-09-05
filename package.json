@@ -11,10 +11,11 @@
     "build:example": "node lib/timeline-export.bin.js -p ./example/profile.json -o ./example/dist"
   },
   "dependencies": {
+    "-": "^0.0.1",
     "memfs": "^3.1.2",
     "resolve-pkg": "^2.0.0",
     "timeline-export-app": "^1.1.1-4e36ac84",
-    "yargs": "^15.3.1"
+    "yargs": "^15.4.1"
   },
   "devDependencies": {
     "@types/node": "^13.9.2",
